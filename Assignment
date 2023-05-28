@@ -10,38 +10,102 @@ print(df.head())
 
 Q2. How do you check the data type of a column in a Pandas DataFrame?
 
-ajahjdhajd
+Ans: To check the data type of a column in a Pandas DataFrame, you can use the dtypes attribute or the dtype method
+
+import pandas as pd
+data_types = df.dtypes
+print(data_types)
+
 
 Q3. How do you select rows from a Pandas DataFrame based on a condition?
 
+Ans:
+
+To select rows from a Pandas DataFrame based on a condition, you can use boolean indexing
+import pandas as pd
+condition = df['column_name'] > 10
+selected_rows = df[condition]
+print(selected_rows)
+
+
+
 Q4. How do you rename columns in a Pandas DataFrame?
+
+Ans: 
+To rename columns in a Pandas DataFrame, you can use the rename() method. The rename()
 
 Q5. How do you drop columns in a Pandas DataFrame?
 
+Ans : To drop columns from a Pandas DataFrame, you can use the drop() method. The drop()
+
+
 Q6. How do you find the unique values in a column of a Pandas DataFrame?
+
+ans:
+To find the unique values in a column of a Pandas DataFrame, you can use the unique() method. 
 
 Q7. How do you find the number of missing values in each column of a Pandas DataFrame?
 
+Ans: 
+To find the number of missing values in each column of a Pandas DataFrame, you can use the isnull() method in combination with the sum() method
+
 Q8. How do you fill missing values in a Pandas DataFrame with a specific value?
+
+Ans: 
+To fill missing values in a Pandas DataFrame with a specific value, you can use the fillna() method
 
 Q9. How do you concatenate two Pandas DataFrames?
 
+Ans: 
+To concatenate two Pandas DataFrames, you can use the concat() function provided by the Pandas library.
+
 Q10. How do you merge two Pandas DataFrames on a specific column?
+
+Ans: 
+To merge two Pandas DataFrames on a specific column, you can use the merge() function provided by the Pandas library.
+
 
 Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
 
+Ans: 
+To group data in a Pandas DataFrame by a specific column and apply an aggregation function,use the groupby() function along with the desired aggregation function
+
 Q12. How do you pivot a Pandas DataFrame?
+
+Ans: 
+To pivot a Pandas DataFrame, you can use the pivot() function. The pivot() function allows you to restructure the DataFrame by converting distinct values from one column into multiple columns.
 
 Q13. How do you change the data type of a column in a Pandas DataFrame?
 
+Ans: To change the data type of a column in a Pandas DataFrame, you can use the astype() method or the to_numeric() function
+
 Q14. How do you sort a Pandas DataFrame by a specific column?
+
+Ans: 
+To sort a Pandas DataFrame by a specific column, you can use the sort_values() method
 
 Q15. How do you create a copy of a Pandas DataFrame?
 
+Ans:
+To create a copy of a Pandas DataFrame, you can use the copy() method.
+
 Q16. How do you filter rows of a Pandas DataFrame by multiple conditions?
+
+Ans: 
+To filter rows of a Pandas DataFrame by multiple conditions, you can use boolean indexing along with logical operators such as & (and) and | (or)
 
 Q17. How do you calculate the mean of a column in a Pandas DataFrame?
 
+Ans: 
+To calculate the mean of a column in a Pandas DataFrame, you can use the mean() 
+
 Q18. How do you calculate the standard deviation of a column in a Pandas DataFrame?
 
+Ans: 
+To calculate the standard deviation of a column in a Pandas DataFrame, you can use the std() method.
+
+
 Q19. How do you calculate the correlation between two columns in a Pandas DataFrame?
+
+Ans: 
+To calculate the correlation between two columns in a Pandas DataFrame, you can use the corr() method.
